@@ -1,0 +1,294 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.line2{
+    height: 1px;
+    width: 20%;
+    background-color: black;
+    
+}
+
+
+/* =============Navbar========= */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.932);
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616); */
+}
+
+.logo img {
+    width: 140px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: black;
+    margin: 0px 5px;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+    border-radius: 7px;
+    background-color: red;
+    box-shadow: 5px 5px 15px red;
+    transform: scale(1.5);
+}
+
+/* =============HOME========= */
+
+#home {
+    width: 100%;
+    height: 97.2vh;
+    position: relative;
+    background-image: url(images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home_content {
+    width: 50%;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+.line {
+    height: 1px;
+    width: 20%;
+    margin-top: -20px;
+    background-color: brown;
+}
+
+.home_heading {
+    text-transform: uppercase;
+    color: rgb(78, 7, 7);
+}
+
+.home_heading2 {
+    margin-top: -10px;
+    font-size: 40px;
+
+}
+
+.home_heading2 span {
+    color: red;
+
+}
+
+.home_heading3 {
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.home_para {
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 8px 30px;
+    color: white;
+    background-color: red;
+    box-shadow: 5px 5px 15px red;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: gold;
+    box-shadow: 5px 5px 15px gold;
+}
+
+/* =============ABOUT========= */
+
+#about {
+    width: 100%;
+    height: 97.2vh;
+    position: relative;
+    padding-top: 40px;
+}
+
+.about_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about_heading {
+    font-size: 45px;
+    text-align: center;
+    color: red;
+}
+
+.left {
+    width: 50%;
+    position: relative;
+    top: 90px;
+
+}
+
+.right {
+    width: 40%;
+}
+
+.right img {
+    width: 90%;
+}
+
+.about_heading2 {
+    font-size: 34px;
+}
+
+.about_para {
+    padding-bottom: 20px;
+}
+
+/* =============Products========= */
+
+#products {
+    width: 100%;
+    height: 97.2vh;
+    position: relative;
+    padding-top: 61px;
+
+}
+
+.product_heading {
+    font-size: 45px;
+    text-align: center;
+    color: red;
+}
+.product_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.product_item{
+    margin-right:90px ;
+    text-align: center;
+    transition: all ease 0.2s ;
+}
+.product_item:hover{
+    box-shadow: 5px 5px 15px gray;
+}
+.product_item img{
+
+}
+.product_item img:hover{
+   
+}
+
+.product_name{
+    font-size: 20px;
+}
+.name2{
+    padding-top: 40px;
+}
+
+/* =============contact========= */
+
+#contact{
+    width: 100%;
+    height: 96.2vh;
+    position: relative;
+    padding-top: 61px;
+    background-image: url(images/footer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact_heading{
+    font-size: 45px;
+    text-align: center;
+    color: red;
+}
+.contact_form {
+    width: 30%;
+    height: 60%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1%;
+    left: 35%;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.884);
+    color: black;
+    border-radius: 8px;
+}
+
+.contact_form textarea {
+    height: 100px;
+}
+
+.contact_button {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: red;
+    box-shadow: 3px 3px 15px red;
+    cursor: pointer;
+}
+
+.contact_button:hover{
+    background-color: gold;
+    color: black;
+    box-shadow: 5px 5px 20px gold;
+}
+
+/* =============Footer========= */
+
+.footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
